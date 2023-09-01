@@ -1,4 +1,7 @@
 [
     { "nombre": "Super Mario Bros. La película", "precio": 4.20 },
-    { "nombre": "Transformer", "precio": 5.25}
+    { "nombre": "Transformer", "precio": 5.25},
+    { "nombre": "Rapido y Furiosos 20", "precio": 3.25},
+    { "nombre": "Lluvia de Hamburguesas", "precio": 2.25}
+
 ]

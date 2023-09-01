@@ -44,20 +44,23 @@ function App() {
   return (
     <div className="app">
       <h1>Lista de Compras de Películas</h1>
-      <form onSubmit={e => e.preventDefault()}>
-      <Select
-        options={data}
-        targetOption={targetOption}
-        onChange={handleSelectChange}
-      />
-      <button onClick={handleAddEntrada}>Agregar</button>
+      <div className='form'>
+        <form onSubmit={e => e.preventDefault()}>
+          <Select
+          options={data}
+          targetOption={targetOption}
+          onChange={handleSelectChange}
+          />
+          <button onClick={handleAddEntrada}>Agregar</button>
+        </form>
+      </div>
       <Listado
         peliculas={entradas}
         onDeletePelicula={handleDeleteEntrada}
         onCantidadChange={handleCantidadChange}
       />
-      <p>Total Precio: ${totalPrecio.toFixed(2)}</p>
-      </form>
+      <p className="totalPrecio">Total Precio: ${totalPrecio.toFixed(2)}</p>
+      
     </div>
   );
 }
